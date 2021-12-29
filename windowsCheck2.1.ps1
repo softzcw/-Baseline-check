@@ -7,6 +7,7 @@
 #$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
 #@{} 创建一个哈希表
 #@() 创建一个数组
+$PSDefaultParameterValues['*:Encoding'] = 'oem'
 $data = @{"project"=@()}
 secedit /export /cfg config.cfg /quiet
 Write-Host "=================================="
